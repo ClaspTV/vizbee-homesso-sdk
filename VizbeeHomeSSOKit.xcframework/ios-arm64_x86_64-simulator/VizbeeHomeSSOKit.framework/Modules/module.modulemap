@@ -1,0 +1,4 @@
+framework module VizbeeHomeSSOKit {
+  header "VizbeeHomeSSOKit-Swift.h"
+  requires objc
+}
