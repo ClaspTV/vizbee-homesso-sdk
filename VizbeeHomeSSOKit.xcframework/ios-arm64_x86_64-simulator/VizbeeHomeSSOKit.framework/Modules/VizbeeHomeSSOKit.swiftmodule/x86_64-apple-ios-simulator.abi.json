@@ -1,9 +1,19 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "VizbeeHomeSSOKit",
+    "printedName": "VizbeeHomeSSOKit",
     "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VizbeeHomeSSOKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
       {
         "kind": "Import",
         "name": "Foundation",
@@ -422,6 +432,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -835,6 +859,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -900,6 +938,16 @@
         "printedName": "os.log",
         "declKind": "Import",
         "moduleName": "VizbeeHomeSSOKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VizbeeHomeSSOKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -1283,6 +1331,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1425,7 +1487,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "VZBHomeSSOAdapter",
-                "printedName": "VizbeeHomeSSOKit.VZBHomeSSOAdapter",
+                "printedName": "any VizbeeHomeSSOKit.VZBHomeSSOAdapter",
                 "usr": "c:@M@VizbeeHomeSSOKit@objc(pl)VZBHomeSSOAdapter"
               }
             ],
@@ -1458,6 +1520,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1527,7 +1603,7 @@
           {
             "kind": "Function",
             "name": "getSignedInInfo",
-            "printedName": "getSignedInInfo(callback:)",
+            "printedName": "getSignedInInfo(onSuccess:onFailure:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1559,11 +1635,29 @@
                     "usr": "s:Sa"
                   }
                 ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@VizbeeHomeSSOKit@objc(pl)VZBHomeSSOAdapter(im)getSignedInInfoWithCallback:",
-            "mangledName": "$s16VizbeeHomeSSOKit17VZBHomeSSOAdapterP15getSignedInInfo8callbackyySayAA07VZBSignhI0CGc_tF",
+            "usr": "c:@M@VizbeeHomeSSOKit@objc(pl)VZBHomeSSOAdapter(im)getSignedInInfoOnSuccess:onFailure:",
+            "mangledName": "$s16VizbeeHomeSSOKit17VZBHomeSSOAdapterP15getSignedInInfo9onSuccess0J7FailureyySayAA07VZBSignhI0CGc_ys5Error_pctF",
             "moduleName": "VizbeeHomeSSOKit",
             "genericSig": "<τ_0_0 where τ_0_0 : VizbeeHomeSSOKit.VZBHomeSSOAdapter>",
             "sugared_genericSig": "<Self where Self : VizbeeHomeSSOKit.VZBHomeSSOAdapter>",
@@ -1615,7 +1709,24 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1633,46 +1744,60 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOMetricsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 203,
+      "length": 33,
+      "value": "\"REMOTE_HOMESSO_SIGNIN_REQUESTED\""
+    },
+    {
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOMetricsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 283,
+      "length": 30,
+      "value": "\"REMOTE_HOMESSO_SIGNIN_STATUS\""
+    },
+    {
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOMetricsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 403,
+      "length": 28,
+      "value": "\"REMOTE_HOMESSO_SDK_VERSION\""
+    },
+    {
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOMetricsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 473,
+      "length": 21,
+      "value": "\"IS_REMOTE_SIGNED_IN\""
+    },
+    {
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOMetricsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 538,
+      "length": 23,
+      "value": "\"SCREEN_SIGN_IN_STATUS\""
+    },
+    {
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOMetricsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 603,
+      "length": 21,
+      "value": "\"IS_SCREEN_SIGNED_IN\""
+    },
+    {
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOMetricsConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 667,
+      "length": 22,
+      "value": "\"HOMESSO_SIGN_IN_TYPE\""
+    },
+    {
       "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBTVSignInStatus.swift",
       "kind": "StringLiteral",
       "offset": 451,
       "length": 26,
       "value": "\"VZBSSO_VZBTVSignInStatus\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBTVSignInStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 630,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBTVSignInStatus.swift",
-      "kind": "StringLiteral",
-      "offset": 719,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBTVSignInStatus.swift",
-      "kind": "StringLiteral",
-      "offset": 767,
-      "length": 56,
-      "value": "\"Empty \""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBTVSignInStatus.swift",
-      "kind": "StringLiteral",
-      "offset": 813,
-      "length": 8,
-      "value": "\" received\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBTVSignInStatus.swift",
-      "kind": "Dictionary",
-      "offset": 1190,
-      "length": 3,
-      "value": "[]"
     },
     {
       "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBTVSignInStatus.swift",
@@ -1717,20 +1842,6 @@
       "value": "\", customData=NONE\""
     },
     {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBTVSignInStatus.swift",
-      "kind": "StringLiteral",
-      "offset": 235,
-      "length": 17,
-      "value": "\"VizbeeHomeSSOKit.VZBTVSignInStatus\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBSignInInfo.swift",
-      "kind": "Dictionary",
-      "offset": 599,
-      "length": 3,
-      "value": "[]"
-    },
-    {
       "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBSignInInfo.swift",
       "kind": "StringLiteral",
       "offset": 679,
@@ -1773,132 +1884,6 @@
       "value": "\", customData=NONE\""
     },
     {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBSignInInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 238,
-      "length": 13,
-      "value": "\"VizbeeHomeSSOKit.VZBSignInInfo\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/SampleApp\/VZBLogManager.swift",
-      "kind": "StringLiteral",
-      "offset": 444,
-      "length": 3,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/SampleApp\/VZBLogManager.swift",
-      "kind": "StringLiteral",
-      "offset": 991,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/SampleApp\/VZBLogManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1276,
-      "length": 52,
-      "value": "\"%{public}@ - %{public}@ : %{public}lu | %{public}@\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBSignInState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 187,
-      "length": 16,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBSignInState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 213,
-      "length": 15,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBSignInState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 238,
-      "length": 12,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBSignInState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 260,
-      "length": 15,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBSignInState.swift",
-      "kind": "StringLiteral",
-      "offset": 458,
-      "length": 13,
-      "value": "\"not_started\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBSignInState.swift",
-      "kind": "StringLiteral",
-      "offset": 523,
-      "length": 13,
-      "value": "\"in_progress\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBSignInState.swift",
-      "kind": "StringLiteral",
-      "offset": 587,
-      "length": 11,
-      "value": "\"completed\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBSignInState.swift",
-      "kind": "StringLiteral",
-      "offset": 646,
-      "length": 8,
-      "value": "\"failed\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBSignInState.swift",
-      "kind": "StringLiteral",
-      "offset": 705,
-      "length": 11,
-      "value": "\"cancelled\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBSignInState.swift",
-      "kind": "StringLiteral",
-      "offset": 903,
-      "length": 13,
-      "value": "\"not_started\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBSignInState.swift",
-      "kind": "StringLiteral",
-      "offset": 968,
-      "length": 13,
-      "value": "\"in_progress\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBSignInState.swift",
-      "kind": "StringLiteral",
-      "offset": 1033,
-      "length": 11,
-      "value": "\"completed\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBSignInState.swift",
-      "kind": "StringLiteral",
-      "offset": 1095,
-      "length": 8,
-      "value": "\"failed\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBSignInState.swift",
-      "kind": "StringLiteral",
-      "offset": 1151,
-      "length": 11,
-      "value": "\"cancelled\""
-    },
-    {
       "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/model\/VZBSignInState.swift",
       "kind": "IntegerLiteral",
       "offset": 187,
@@ -1928,237 +1913,125 @@
     },
     {
       "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
+      "kind": "Dictionary",
+      "offset": 462,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
       "kind": "StringLiteral",
-      "offset": 443,
+      "offset": 521,
       "length": 26,
       "value": "\"VZBSSO_VZBHomeSSOManager\""
     },
     {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 626,
-      "length": 20,
-      "value": "\"initialize invoked\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 995,
-      "length": 27,
-      "value": "\"Start HomeSSO for sign in\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1590,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 1648,
-      "length": 40,
-      "value": "\"Invalid status with empty sign in type\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 1773,
-      "length": 86,
-      "value": "\"Mobile sign in status fetched - is mobile signed in = \""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 1858,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 2330,
-      "length": 5,
-      "value": "\"iOS\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 2491,
-      "length": 135,
-      "value": "\"Sending an event = \""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 2548,
-      "length": 4,
-      "value": "\" with data = \""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 2580,
-      "length": 3,
-      "value": "\" and also registering for the same event type\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 2896,
-      "length": 45,
-      "value": "\"Method onEvent called with event = \""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 2940,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 3491,
-      "length": 35,
-      "value": "\"Invoked onSignInStatus on adapter\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 3712,
-      "length": 48,
-      "value": "\"Session state changed, new state = \""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 3759,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 3851,
-      "length": 21,
-      "value": "\"Start Sign In on TV\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 198,
-      "length": 17,
-      "value": "\"VizbeeHomeSSOKit.VZBHomeSSOHandler\""
-    },
-    {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHSSOConstants.swift",
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOConstants.swift",
       "kind": "StringLiteral",
       "offset": 179,
       "length": 26,
       "value": "\"tv.vizbee.homesso.signin\""
     },
     {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHSSOConstants.swift",
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOConstants.swift",
       "kind": "StringLiteral",
       "offset": 236,
       "length": 10,
       "value": "\"sub_type\""
     },
     {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHSSOConstants.swift",
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOConstants.swift",
       "kind": "StringLiteral",
       "offset": 292,
       "length": 7,
       "value": "\"sinfo\""
     },
     {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHSSOConstants.swift",
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOConstants.swift",
       "kind": "StringLiteral",
       "offset": 334,
       "length": 14,
       "value": "\"is_signed_in\""
     },
     {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHSSOConstants.swift",
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOConstants.swift",
       "kind": "StringLiteral",
       "offset": 383,
       "length": 7,
       "value": "\"stype\""
     },
     {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHSSOConstants.swift",
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOConstants.swift",
       "kind": "StringLiteral",
       "offset": 425,
       "length": 14,
       "value": "\"device_model\""
     },
     {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHSSOConstants.swift",
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOConstants.swift",
       "kind": "StringLiteral",
       "offset": 471,
       "length": 11,
       "value": "\"device_os\""
     },
     {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHSSOConstants.swift",
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOConstants.swift",
       "kind": "StringLiteral",
       "offset": 516,
       "length": 13,
       "value": "\"custom_data\""
     },
     {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHSSOConstants.swift",
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOConstants.swift",
       "kind": "StringLiteral",
       "offset": 566,
       "length": 9,
       "value": "\"sstatus\""
     },
     {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHSSOConstants.swift",
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOConstants.swift",
       "kind": "StringLiteral",
       "offset": 603,
       "length": 8,
       "value": "\"sstate\""
     },
     {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHSSOConstants.swift",
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOConstants.swift",
       "kind": "StringLiteral",
       "offset": 654,
       "length": 13,
       "value": "\"not_started\""
     },
     {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHSSOConstants.swift",
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOConstants.swift",
       "kind": "StringLiteral",
       "offset": 705,
       "length": 13,
       "value": "\"in_progress\""
     },
     {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHSSOConstants.swift",
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOConstants.swift",
       "kind": "StringLiteral",
       "offset": 754,
       "length": 6,
       "value": "\"done\""
     },
     {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHSSOConstants.swift",
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOConstants.swift",
       "kind": "StringLiteral",
       "offset": 793,
       "length": 9,
       "value": "\"failure\""
     },
     {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHSSOConstants.swift",
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOConstants.swift",
       "kind": "StringLiteral",
       "offset": 853,
       "length": 15,
       "value": "\"start_sign_in\""
     },
     {
-      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHSSOConstants.swift",
+      "filePath": "\/Users\/sidharthdatta\/Documents\/Remote_SDK_iOS\/VizbeeKit\/VizbeeHomeSSOKit\/VZBHomeSSOConstants.swift",
       "kind": "StringLiteral",
       "offset": 915,
       "length": 16,

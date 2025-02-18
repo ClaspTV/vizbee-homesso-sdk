@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 ### Security
 
+## [1.0.1] - 2024-05-06
+### Added
+    Support for metrics events.
+
 ## [1.0.0] - 2024-02-27
 ### Added
     APIs to handle the sign-in event.
